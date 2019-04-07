@@ -1,0 +1,8 @@
+version: '3'
+services: 
+        web1 : 
+                hostname: web_1 
+                build : 
+                        context: .
+                ports : 
+                - 8080:80 
