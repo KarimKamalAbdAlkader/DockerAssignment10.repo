@@ -1,3 +1,4 @@
 FROM nginx
-RUN useradd karim -p karim -u 1000
+ARG userid=1000
+RUN useradd karim -p karim -u $userid
 USER karim
